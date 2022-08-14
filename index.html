@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+    function open_MultiWin(){
+        var location = ['Data/CSharpBasics.pdf','Data/CSharpintermdiate.pdf']
 
+        for(let i =0; i<location.length ;i++){
+            window.open(location[i],'_blank','fullscreen=no');
+        }
+    };
+</script>
     <!-- <script type="text/javascript">
         document.getElementsByClassName("phoneBtn").onclick = function() {
             location.href = "http://www.google.com/"
@@ -220,8 +228,9 @@
                         <script async src="//www.instagram.com/embed.js"></script>
                     </li>
                     <li>
-                        <a href="Data\MichaelBothaCV.pdf" download>
-                            <button id="gamingbtn" class="gaming"><i class="fa fa-download" aria-hidden="true"></i></button>
+                        
+                        <a href='#' class="openLink">
+                            <button id="gamingbtn" class="gaming" onclick="open_MultiWin()"><i class="fa fa-download" aria-hidden="true"></i></button>
                         </a>
                     </li>
                 </ul>
